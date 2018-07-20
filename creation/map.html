@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+</head>
+<body>
+ <script>
+   
+var stringarr=["g","u","n","a","k","r","i","s","h","n","a"];
+var newarr=stringarr.map(function(x)
+{
+    console.log(x.charCodeAt(0))
+});
+    var map = Array.prototype.map;
+    var a = map.call('Hello World', function(x) { 
+      console.log( x.charCodeAt(0)); 
+  }); 
+  var array1=[1,2,3,4,5,6,7,8,9,10];
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  var sum=array1.filter(x=>x%2==0).map(x=>x).reduce(reducer,10);
+  console.log("sum"+sum);
+//   Find odd r even
+  console.log(array1.filter(x=>(x%2==0)?array1.map(even=>x):array1.map(odd=>x)));
+  console.log(array1.filter(x=>(x%2!=0)?odd=x:0));
+//  Print odd and Even
+  var even=array1.filter(x=>x%2==0).map(x=>x);
+  var odd=array1.filter(x=>x%2!=0).map(x=>x);
+  console.log("Even"+even);
+  console.log("Odd"+odd);
+</script>
+</body>
+</html>
